@@ -15,6 +15,7 @@ The application consists of two key components:
 1. **Facial Encoder**: This component generates semantic vector embeddings for face images using deep learning models.
 
 2. **Milvus Search Index**: It performs efficient similarity search and retrieval on the facial vectors.
+3. **Attu**: Provides monitoring, alerts, and insights for Milvus.
 
 ## Facial Encoder
 
@@ -30,7 +31,6 @@ The facial encoder follows these steps to create a 512-dimensional embedding vec
 ## Milvus Setup
 <p>
   <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*uN0CIKZYydOpTNYK5vhOPw.png" width="600" height="200">
-  <img src="https://milvus.io/static/2d8c1d0da0fc8af1df342d2f55b292a9/6ffd1/insight_overview.png" width="600" height="200">
 </p>
 
 Milvus provides the vector index and search capabilities for the application. The following steps are used to set up Milvus:
@@ -44,6 +44,22 @@ Milvus provides the vector index and search capabilities for the application. Th
 4. Insert facial vectors from the encoder into the Milvus collection.
 
 5. Optimize index parameters like `nlist` for optimal performance.
+
+### Configuring Attu
+<p align="center">
+   <img src="https://milvus.io/static/2d8c1d0da0fc8af1df342d2f55b292a9/6ffd1/insight_overview.png" width="600" height="200">
+</p>
+Once Milvus is set up, Attu can be configured for monitoring and visibility:
+
+1. Install Attu agent on the Milvus server.
+
+2. Configure a data source to point to the Milvus instance.
+
+3. Set up desired alerts and monitoring metrics.
+
+4. Customize dashboards and views as needed.
+
+5. Review Attu insights to optimize Milvus performance.
 
 
 ## Search Pipeline
@@ -59,12 +75,8 @@ To perform a search, a query image passes through the facial encoder to generate
 4. Return image filenames/metadata associated with matched face vectors.
 
 
-## Conclusion
-
 This facial image search engine combines state-of-the-art deep learning with Milvus' purpose-built vector search capabilities. It can reliably scale to billions of face images for applications like de-duplication and identity search.
 
-Some possible next steps include integrating with front-end apps, deploying to cloud infrastructure, and optimizing for large datasets. Overall, this showcases how Milvus can enable robust and scalable similarity search in domains like facial recognition.
 
-**Repository Name Suggestion**: "FacialSearch-Milvus"
 
-Feel free to clone this repository and explore the power of facial image search with Milvus!
+
