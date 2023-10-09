@@ -1,4 +1,8 @@
 # Facial-Image-Search-Engine-CIBR-with-Milvus
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:828/0*GibgcYb8tARyAwBZ" width="200" height="200">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/PyTorch_logo_black.svg/2560px-PyTorch_logo_black.svg.png" width="200" height="200">
+</p>
 
 ## Overview
 
