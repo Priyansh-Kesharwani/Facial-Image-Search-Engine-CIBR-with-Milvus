@@ -30,7 +30,7 @@ The facial encoder follows these steps to create a 512-dimensional embedding vec
 ## Milvus Setup
 <p>
   <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*uN0CIKZYydOpTNYK5vhOPw.png" width="600" height="200">
-  <img src="[https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/PyTorch_logo_black.svg/2560px-PyTorch_logo_black.svg.png](https://milvus.io/static/2d8c1d0da0fc8af1df342d2f55b292a9/6ffd1/insight_overview.png)" width="600" height="200">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/PyTorch_logo_black.svg/2560px-PyTorch_logo_black.svg.png" width="600" height="200">
 </p>
 
 Milvus provides the vector index and search capabilities for the application. The following steps are used to set up Milvus:
